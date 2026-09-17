@@ -3,13 +3,13 @@
    ========================= */
 
 :root {
-  --bg: #08090b;
-  --bg-soft: #0e1014;
-  --card: #111319;
+  --bg: #071426;
+  --bg-soft: #0b1d35;
+  --card: #102846;
   --text: #f4f4f5;
   --muted: #a4a7af;
   --line: rgba(255,255,255,.10);
-  --accent: #ffffff;
+  --accent: #5ab8ff;
   --accent-soft: #d8d8d8;
   --shadow: 0 25px 70px rgba(0,0,0,.35);
   --header: rgba(8,9,11,.78);
@@ -232,10 +232,10 @@ button { font: inherit; }
 
 .image-frame {
   position: relative;
-  aspect-ratio: 1 / 1.08;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: #050607;
+  border-radius: 50%; background: #06172b;
   box-shadow: var(--shadow);
 }
 
@@ -253,7 +253,7 @@ button { font: inherit; }
 .frame-line {
   position: absolute;
   z-index: 2;
-  inset: 16px;
+  inset: 16px; border-radius: 50%;
   border: 1px solid rgba(255,255,255,.18);
   pointer-events: none;
 }
@@ -447,7 +447,7 @@ button { font: inherit; }
   .hero h1 { font-size: 49px; }
   .hero-text { font-size: 14px; }
   .quick-links { flex-direction: column; gap: 8px; }
-  .image-frame { aspect-ratio: 1 / 1.08; }
+  .image-frame { aspect-ratio: 1 / 1; }
   .skills-grid { grid-template-columns: 1fr; }
   .skill-card { min-height: 150px; }
   .project-card { grid-template-columns: 1fr; padding: 25px; }
